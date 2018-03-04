@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/activity_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/layout_padding"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/temperatureLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/current_temperature"/>
+
+    <TextView
+        android:id="@+id/temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/temperatureLabel"
+        tools:text="14 °C / 39 °F"/>
+
+    <TextView
+        android:id="@+id/windLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/wind_information_top_margin"
+        android:layout_below="@+id/temperature"
+        android:text="@string/current_wind"/>
+
+    <TextView
+        android:id="@+id/windInformation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/windLabel"
+        tools:text="5 mph / 58 degrees"/>
+
+    <TextView
+        android:id="@+id/standardDeviationLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/standard_deviation_top_margin"
+        android:layout_below="@+id/windInformation"
+        android:text="@string/standard_deviation_label" />
+
+    <TextView
+        android:id="@+id/standardDeviation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/standardDeviationLabel"
+        tools:text="5.93"
+        android:visibility="invisible"/>
+    
+    <ImageView
+        android:id="@+id/cloudImage"
+        android:layout_width="@dimen/cloud_icon_width"
+        android:layout_height="@dimen/cloud_icon_height"
+        android:layout_toRightOf="@+id/temperatureLabel"
+        android:layout_toEndOf="@+id/temperatureLabel"
+        android:layout_marginLeft="@dimen/cloud_icon_left_margin"
+        android:layout_marginStart="@dimen/cloud_icon_left_margin"
+        android:layout_alignTop="@+id/temperatureLabel"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/standardDeviationButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/standard_deviation_button_vertical_padding"
+        android:paddingBottom="@dimen/standard_deviation_button_vertical_padding"
+        android:paddingLeft="@dimen/standard_deviation_button_horizontal_padding"
+        android:paddingRight="@dimen/standard_deviation_button_horizontal_padding"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/standardDeviation"
+        android:layout_marginTop="@dimen/standard_deviation_button_top_margin"
+        android:text="@string/standard_deviation_button_text"/>
+
+    <com.pnikosis.materialishprogress.ProgressWheel
+        android:id="@+id/progressWheel"
+        android:layout_width="@dimen/progress_wheel_width"
+        android:layout_height="@dimen/progress_wheel_height"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        wheel:matProg_barColor="@color/colorProgress"
+        wheel:matProg_progressIndeterminate="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

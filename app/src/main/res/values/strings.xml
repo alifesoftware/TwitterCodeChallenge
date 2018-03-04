@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Tweather</string>
+    <string name="current_temperature">Current temperature</string>
+    <string name="temperature">%1$f °C / %2$f °F</string>
+    <string name="current_wind">Current wind conditions</string>
+    <string name="wind_information">%1$f mph / %2$d degrees</string>
+    <string name="standard_deviation_label">Standard Deviation (5 days)</string>
+    <string name="standard_deviation_button_text">Standard Deviation</string>
+    <string name="standard_deviation_error">There was an error getting Standard Deviation</string>
+</resources>

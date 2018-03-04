@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="layout_padding">20dp</dimen>
+    <dimen name="wind_information_top_margin">4dp</dimen>
+    <dimen name="cloud_icon_width">64dp</dimen>
+    <dimen name="cloud_icon_height">128dp</dimen>
+    <dimen name="cloud_icon_left_margin">128dp</dimen>
+    <dimen name="standard_deviation_top_margin">4dp</dimen>
+    <dimen name="standard_deviation_button_vertical_padding">3dp</dimen>
+    <dimen name="standard_deviation_button_horizontal_padding">8dp</dimen>
+    <dimen name="standard_deviation_button_top_margin">50dp</dimen>
+    <dimen name="progress_wheel_width">80dp</dimen>
+    <dimen name="progress_wheel_height">80dp</dimen>
+</resources>
