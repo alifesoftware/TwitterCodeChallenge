@@ -3,7 +3,7 @@ package com.twitter.challenge.presenter;
 import android.util.Log;
 
 import com.twitter.challenge.R;
-import com.twitter.challenge.StandardDeviationCalculator;
+import com.twitter.challenge.utils.StandardDeviationCalculator;
 import com.twitter.challenge.WeatherView;
 import com.twitter.tweathersdk.core.TweatherSdk;
 import com.twitter.tweathersdk.core.events.CurrentWeatherEvent;

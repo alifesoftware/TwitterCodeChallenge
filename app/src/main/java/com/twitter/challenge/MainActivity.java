@@ -16,6 +16,8 @@ import android.widget.Toast;
 import com.pnikosis.materialishprogress.ProgressWheel;
 import com.twitter.challenge.presenter.WeatherPresenter;
 import com.twitter.challenge.presenter.WeatherPresenterImpl;
+import com.twitter.challenge.utils.DecimalUtils;
+import com.twitter.challenge.utils.TemperatureConverter;
 import com.twitter.tweathersdk.model.WeatherDataPojo;
 
 

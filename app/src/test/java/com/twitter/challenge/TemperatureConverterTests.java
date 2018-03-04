@@ -1,5 +1,7 @@
 package com.twitter.challenge;
 
+import com.twitter.challenge.utils.TemperatureConverter;
+
 import org.assertj.core.data.Offset;
 import org.junit.Test;
 

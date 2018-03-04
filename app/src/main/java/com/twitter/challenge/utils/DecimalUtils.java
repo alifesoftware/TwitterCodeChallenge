@@ -1,4 +1,4 @@
-package com.twitter.challenge;
+package com.twitter.challenge.utils;
 
 import java.text.DecimalFormat;
 
@@ -9,7 +9,7 @@ import java.text.DecimalFormat;
  * with too many digits after the decimal
  */
 
-class DecimalUtils {
+public class DecimalUtils {
     /**
      * Helper method to reduce the number of decimals
      * in a double
@@ -17,7 +17,7 @@ class DecimalUtils {
      * @param value - double value to reduce decimals
      * @return Display String with less precision
      */
-    static String getDecimalDisplayString(final double value) {
+    public static String getDecimalDisplayString(final double value) {
         final DecimalFormat decimalFormatter = new DecimalFormat("0.0000");
         return decimalFormatter.format(value);
     }
@@ -29,7 +29,7 @@ class DecimalUtils {
      * @param value - float value to reduce decimals
      * @return Display String with less precision
      */
-    static String getDecimalDisplayString(final float value) {
+    public static String getDecimalDisplayString(final float value) {
         final DecimalFormat decimalFormatter = new DecimalFormat("0.0000");
         return decimalFormatter.format(value);
     }
